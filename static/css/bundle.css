@@ -535,7 +535,6 @@ a {
   top: 0;
   bottom: 0;
   width: 20rem;
-  padding: 1rem;
   box-sizing: border-box;
   text-align: center; }
   .site-header .is-active a {
@@ -598,8 +597,8 @@ a {
 
 .avatar {
   margin-top: 3rem;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem !important;
+  height: 6rem !important;
   border-radius: 50%;
   border: 4px solid white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -650,7 +649,7 @@ a {
     list-style: none;
     padding: 0; }
   .site-menu .menu-item {
-    padding: 1rem 0; }
+    padding: 8px 0 !important; }
     .site-menu .menu-item a {
       display: inline-block;
       height: 1.5rem;
@@ -1428,5 +1427,6 @@ table {
       .post-meta{
           display: none;
       }
+     
 
 /*# sourceMappingURL=bundle.css.map */

@@ -27,6 +27,11 @@ canonifyurls = true
     weight = 4
     identifier = "vscode"
     url = "/post/vsCode"
+  [[menu.main]]
+    name = "ESLint Configuration"
+    weight = 5
+    identifier = "eslint"
+    url = "/post/esLint"
 
 # Add your own params here
 [params]
