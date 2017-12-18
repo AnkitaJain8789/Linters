@@ -36,10 +36,8 @@ canonifyurls = true
 # Add your own params here
 [params]
   author = ""
-  avatar = "/images/eslint.png"
+  avatar = "/images/eslint.svg"
   seotitle = "Hugo Blog (SEO Version)"
   subtitle = "Improves your code quality"
   description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
   paginate = 10
-
-
