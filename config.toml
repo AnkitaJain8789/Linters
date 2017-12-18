@@ -16,22 +16,22 @@ canonifyurls = true
     name = "Atom"
     weight = 2
     identifier = "atom"
-    url = "/atom"
+    url = "/post/atom"
   [[menu.main]]
     name = "Sublime Text"
     weight = 3
     identifier = "sublimetext"
-    url = "/sublime"
+    url = "/post/sublime"
   [[menu.main]]
     name = "Visual Studio Code"
     weight = 4
     identifier = "vscode"
-    url = "/vsCode"
+    url = "/post/vsCode"
   [[menu.main]]
     name = "ESLint Configuration"
     weight = 5
     identifier = "eslint"
-    url = "/esLint"
+    url = "/post/esLint"
 
 # Add your own params here
 [params]
