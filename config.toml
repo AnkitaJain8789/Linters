@@ -16,30 +16,28 @@ canonifyurls = true
     name = "Atom"
     weight = 2
     identifier = "atom"
-    url = "/post/atom"
+    url = "/atom"
   [[menu.main]]
     name = "Sublime Text"
     weight = 3
     identifier = "sublimetext"
-    url = "/post/sublime"
+    url = "/sublime"
   [[menu.main]]
     name = "Visual Studio Code"
     weight = 4
     identifier = "vscode"
-    url = "/post/vsCode"
+    url = "/vsCode"
   [[menu.main]]
     name = "ESLint Configuration"
     weight = 5
     identifier = "eslint"
-    url = "/post/esLint"
+    url = "/esLint"
 
 # Add your own params here
 [params]
   author = ""
-  avatar = "/images/eslint.png"
+  avatar = "/images/eslint.svg"
   seotitle = "Hugo Blog (SEO Version)"
   subtitle = "Improves your code quality"
   description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
   paginate = 10
-
-
