@@ -3,7 +3,10 @@ title: "ESLint Configuration"
 date: 2017-12-06T17:16:35+05:30
 ---
 
-ESLint supports numerous rules to manage a good code quality. But none of it is enabled by default.<br/>
+
+__Linting__ is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. Linting tools like __ESLint__ allow developers to discover problems with their JavaScript code without executing it. <br/>
+
+__ESLint__ supports numerous rules to manage a good code quality. But none of it is enabled by default.<br/>
 There are certain rules that we recommend, should be included mandatorily. We have categorized them for a better understanding.
 
 ### Possible Errors<br/>
