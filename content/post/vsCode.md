@@ -57,67 +57,6 @@ Linting is a type of static analysis that is frequently used to find problematic
 6.	Prior to checking for any linting error make sure your PC/ Laptop has Eslint            Plugin and  is successfully installed.
 
 
-### Possible Errors<br/>
-
-##### • eslint no-new-object<br/>
-
-Examples of __incorrect__ code for this rule:
-```javascript
-var myObject = new Object();
-```
-Examples of __correct__ code for this rule:
-```javascript
-var myObject = {};
-```
-##### • comma-dangle<br/>
-
-Examples of __incorrect__ code for this rule:
-```javascript
-var foo = {bar: "baz",qux: "quux",}
-```
-Examples of __correct__ code for this rule:
-```javascript
-var foo = {bar: 'baz',qux: 'quux'};
-```
-
-##### • no-array-constructor<br/>
-
-Examples of __incorrect__ code for this rule:
-```javascript
-new Array(0, 1, 2)
-```
-Examples of __correct__ code for this rule:
-```javascript
-Array(500)
-```
-##### • no-sparse-arraysno-sparse-arrays<br/>
-
-Examples of __incorrect__ code for this rule:
-```javascript
-var colors = [ "red",, "blue" ];
-```
-Examples of __correct__ code for this rule:
-```javascript
-var colors = [ 'red', 'blue' ];
-```
-##### • no-multi-spaces<br/>
-
-Examples of __incorrect__ code for this rule:
-```javascript
-/*eslint no-multi-spaces: "error"*/
-
-var a =  1;
-if(foo   === "bar") {}
-a <<  b
-```
-Examples of __correct__ code for this rule:
-```javascript
-/*eslint no-multi-spaces: "error"*/
-
-var a = 1;
-if(foo === "bar") {}
-a << b
-```
 <strong>References :</strong>
 
 https://eslint.org/docs/user-guide/configuring
