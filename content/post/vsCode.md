@@ -8,9 +8,11 @@ Visual Studio Code is a source code editor developed by Microsoft for Windows, L
 
 Visual Studio Code is based on Electron, a framework which is used to deploy Node.js applications for the desktop running on the Blink layout engine. Although it uses the Electron framework,the software does not use Atom and instead employs the same editor component (codenamed "Monaco") used in Visual Studio Team Services (formerly called Visual Studio Online).
 
-<strong>EditorConfig: </strong> It helps you to maintain consistent coding styles and settings in a codebase, regardless of the editor or IDE you use.
+### EditorConfig<br/>
 
-<strong>Setup: </strong>
+It helps you to maintain consistent coding styles and settings in a codebase, regardless of the editor or IDE you use.
+
+##### Setup:
 
 1. Search and install <em>EditorConfig for VS Code</em> from the extensions.
 
@@ -20,7 +22,7 @@ Visual Studio Code is based on Electron, a framework which is used to deploy Nod
 
 If root=true property is set, then VSCode doesn't look any further up the directory structure to search for any property if not found in .editorconfig file.
 
-<strong>Supported Properties :</strong>
+##### Supported Properties:
 <ul>
 	<li>indent_style</li>
 	<li>indent_size</li>
@@ -31,56 +33,91 @@ If root=true property is set, then VSCode doesn't look any further up the direct
 	<li>charset</li>
 </ul>
 
-<strong>References :</strong>
+##### References:
 
 http://editorconfig.org/
 
 
+### ES Lint<br/>
 
-ES Lint:
+Linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines.Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it.
 
-•	linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines.
+<strong>Set up: </strong>
 
-•	Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it.
+1.	Node.js (>=4.x), npm version 2+.
 
-	Prerequisite For Linting For Any Code  Base:
+2.	Go to command Prompt and run the command:
+    npm install eslint --save-dev (Locally) / npm i -g eslint (Globally)
+   
+3.	Install a plugin for Eslint that could read .eslintrc.json file.
 
-•	Node.js (>=4.x), npm version 2+.
-•	Go to command Prompt and run the command:
-    npm install eslint --save-dev (Locally)
+4.	.eslintrc.json  configuration file is the one that will be used to override the         exisitng rule of eslint.
+5.	To install plugin open VSCode -> Extensions(Ctrl + Shift + X) -> Install the            plugin named as - ESLint .
 
-            	OR
-
-•	npm i -g eslint (Globally)
-
-•	Install a plugin for Eslint that could read .eslintrc.json file.
-
-•	.eslintrc.json  configuration file is the one that will be used to override the         exisitng rule of eslint.
-•	To install plugin open VSCode -> Extensions(Ctrl + Shift + X) -> Install the            plugin named as - ESLint .
-
-•	Prior to checking for any linting error make sure your PC/ Laptop has Eslint            Plugin and eslint is successfully installed.
-
-•	To check for errors open any existing script file or you can make once -> bottom        left click on "x" a workspace will open up with four tabs.
-
-•	click on 'PROBLEMS' there all linting errors like: quote, white spaace, double          declared errors could be seen along with the count of number of erros.
+6.	Prior to checking for any linting error make sure your PC/ Laptop has Eslint            Plugin and  is successfully installed.
 
 
-EXAMPLE FOR REFERENCE:
-  <h5>• eslint no-new-object</h5>
+### Possible Errors<br/>
 
-var myObject = new Object(); -INCORRECT
+##### • eslint no-new-object<br/>
 
-var myObject = {}; - CORRECT
+Examples of __incorrect__ code for this rule:
+```javascript
+var myObject = new Object();
+```
+Examples of __correct__ code for this rule:
+```javascript
+var myObject = {};
+```
+##### • comma-dangle<br/>
 
-<h5>• comma-dangle</h5>
+Examples of __incorrect__ code for this rule:
+```javascript
+var foo = {bar: "baz",qux: "quux",}
+```
+Examples of __correct__ code for this rule:
+```javascript
+var foo = {bar: 'baz',qux: 'quux'};
+```
 
-var foo = {bar: "baz",qux: "quux",} -INCORRECT
+##### • no-array-constructor<br/>
 
- var foo = {bar: 'baz',qux: 'quux'};  -CORRECT
+Examples of __incorrect__ code for this rule:
+```javascript
+new Array(0, 1, 2)
+```
+Examples of __correct__ code for this rule:
+```javascript
+Array(500)
+```
+##### • no-sparse-arraysno-sparse-arrays<br/>
 
+Examples of __incorrect__ code for this rule:
+```javascript
+var colors = [ "red",, "blue" ];
+```
+Examples of __correct__ code for this rule:
+```javascript
+var colors = [ 'red', 'blue' ];
+```
+##### • no-multi-spaces<br/>
 
- <h5>• no-array-constructor</h5>
+Examples of __incorrect__ code for this rule:
+```javascript
+/*eslint no-multi-spaces: "error"*/
 
-new Array(0, 1, 2) -INCORRECT
+var a =  1;
+if(foo   === "bar") {}
+a <<  b
+```
+Examples of __correct__ code for this rule:
+```javascript
+/*eslint no-multi-spaces: "error"*/
 
-Array(500)  -CORRECT
+var a = 1;
+if(foo === "bar") {}
+a << b
+```
+<strong>References :</strong>
+
+https://eslint.org/docs/user-guide/configuring
