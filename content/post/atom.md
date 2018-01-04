@@ -29,6 +29,10 @@ A simple JavaScript/JSON file can be created to specify configuration informatio
 
 ##### https://eslint.org/docs/user-guide/configuring
 
+{{%
+  video class="align-video" mp4="/media/atom_local_eslintrc.mp4"
+%}}
+
 ##### 2. Using command Prompt:
 This will use initializer from eslint. We have to give the following command:<br/>
 
@@ -48,9 +52,13 @@ This will prompt us to answer certain questions about the how we want to configu
 ##### https://atom.io/packages/linter-eslint
 ##### https://atom.io/packages/linter
 
+{{%
+  video mp4="/media/atom_package_installation.mp4"
+%}}
+
 #### Sample Example:
 
-{{% figure src="/images/atom_input.png" width="60%" alt="JavaScript Code and associated .eslintrc.js file" %}}
+{{% figure class="align-left" src="/images/atom_input.png" width="60%" alt="JavaScript Code and associated .eslintrc.js file" %}}
 
 #### How to execute ?
 
@@ -58,4 +66,4 @@ This will prompt us to answer certain questions about the how we want to configu
 
 #### Output:
 
-{{% figure src="/images/atom_output.png" width="60%" alt="JavaScript Code and associated .eslintrc.js file" %}}
+{{% figure class="align-left" src="/images/atom_output.png" width="60%" alt="JavaScript Code and associated .eslintrc.js file" %}}
