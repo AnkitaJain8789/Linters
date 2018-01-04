@@ -22,6 +22,8 @@ It helps you to maintain consistent coding styles and settings in a codebase, re
 
 If root=true property is set, then VSCode doesn't look any further up the directory structure to search for any property if not found in .editorconfig file.
 
+{{% figure src="/images/EditorConfig_Setup.gif" width="60%" alt="EditorConfig Setup in VSCode" %}}
+
 ##### Supported Properties:
 <ul>
 	<li>indent_style</li>
@@ -32,6 +34,9 @@ If root=true property is set, then VSCode doesn't look any further up the direct
 	<li>trim_trailing_whitespace</li>
 	<li>charset</li>
 </ul>
+
+##### Creating EditorConfig file:
+{{% figure src="/images/EditorConfig_File.gif" width="60%" alt="Creating .editorconfig file" %}}
 
 ##### References:
 
@@ -56,6 +61,9 @@ Linting is a type of static analysis that is frequently used to find problematic
 
 6.	Prior to checking for any linting error make sure your PC/ Laptop has Eslint            Plugin and  is successfully installed.
 
+<strong>Demo for ESLint setup: </strong>
+
+http://recordit.co/XPvFo2R37c 
 
 <strong>References :</strong>
 
