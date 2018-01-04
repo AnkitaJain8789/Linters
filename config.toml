@@ -41,3 +41,4 @@ canonifyurls = true
   subtitle = "Improves your code quality"
   description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
   paginate = 10
+  custom_css = ["css/style.css"]
