@@ -1,5 +1,5 @@
 ---
-title: "Atom"
+title: "Atom Configuration"
 date: 2017-12-06T17:16:35+05:30
 ---
 
