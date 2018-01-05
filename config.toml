@@ -32,6 +32,11 @@ canonifyurls = true
     weight = 5
     identifier = "eslint"
     url = "/post/esLint"
+  [[menu.main]]
+    name = "Editor Config"
+    weight = 6
+    identifier = "editorconfig"
+    url = "/post/editorConfig"
 
 # Add your own params here
 [params]
