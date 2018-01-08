@@ -7,23 +7,54 @@ date: 2017-12-06T17:09:17+05:30
 Sublime Text is a proprietary cross-platform source code editor with a Python application programming interface (API). It natively supports many programming languages and markup languages, and functions can be added by users with plugins, typically community-built and maintained under free-software licenses.
 
 
-<h3>Process to install Sublime editorconfig:</h4>
+#### __Process to install Sublime editorconfig:__
 <p>Install Sublime Text editor software from https://www.sublimetext.com/3 (depending on the OS which you are using).</p>
 
-Once Sublime Text editor is installed, we will have to install the sublime editorconfig by following the steps given below:
+Once Sublime Text editor is installed, we will have to install the sublime editorconfig by the steps given below:
 
-1.	Go the link - https://github.com/sindresorhus/editorconfig-sublime#readme.
-2.	Click on “Clone or download” button.
-3.	Once the file is downloaded, unzip the file. For example, my folder is C:\Users\aaldi\Downloads\sublime_config\editorconfig-sublime-master
-4.	Once the file is unzipped, inside the same folder, create a folder with JS file. Ex: C:\Users\aaldi\Downloads\sublime_config\editorconfig-sublime-master\JS\Example.js
-5.	In this JS file, write some code using the sublime editor and save it.
-6.	Open the command prompt from the main folder (C:\Users\aaldi\Downloads\sublime_config\editorconfig-sublime-master).
-7.	In the Command prompt, give the command – “npm install –g eslint”
-8.	Installation will be started and set of steps will be executed.
-9.	Once the execution is done, give the command – “eslint –init”
-10.	Set of questions will be asked in the command prompt.
-11.	Select the answers accordingly as shown above as per your requirements using arrow keys.
-12.	Once all the questions are answered a “.eslintrc.js” file will be created in the specified folder. 
-13.	Do linting using the command “eslint JS/Example.js”.
-14.	All the errors in your JS file will be shown here, based on the preferences(answers) selected in step no.11 
+•	The prerequisite to any linting setup is to ensure that we have an _ESLint installed_.<br/>
 
+  1. __Node.js (>=4.x)__
+  2. __npm version 2+__
+
+•	Go the link - https://github.com/sindresorhus/editorconfig-sublime.
+
+•	Click on “Clone or download” button.
+
+•	Once the file is downloaded, unzip the file and create a folder with JS file in the same folder.
+
+{{%
+  video class="align-video" mp4="/media/sublime_createJSfile.mp4"
+%}}
+
+•	In this JS file, write some code using the sublime editor and save it.
+
+{{%
+  video class="align-video" mp4="/media/sublime_writeJSfile.mp4"
+%}}
+
+•	Open the command prompt from the main folder. If your project doesnt have package.json, you can create one by running the command - __npm init__.
+
+{{%
+  video class="align-video" mp4="/media/sublime_packageJson.mp4"
+%}}
+
+•	In the Command prompt, give the command __npm install –g eslint__. After installation is done, run the command __eslint --init__, then set of questions will be asked in the command prompt. Select the answers accordingly. Once all the questions are answered a __.eslintrc.js__ file will be created in the specified folder.
+
+{{%
+  video class="align-video" mp4="/media/sublime_installation.mp4"
+%}}
+
+•	Detailed description can be found in https://www.npmjs.com/package/eslint and https://eslint.org/docs/user-guide/configuring
+
+•	Do linting by running the command __eslint file_name.js__.
+
+•	All the errors in your JS file will be shown here, based on the preferences(answers) selected while creating eslintrc.js file
+
+{{%
+  video class="align-video" mp4="/media/sublime_finderror.mp4"
+%}} 
+
+•	Potentially fixable errors can be fixed by running the command __eslint file_name.js --fix__
+
+{{% figure class="align-left" src="/images/sublime_codefix.png" width="60%" alt="potential code fix" %}}
