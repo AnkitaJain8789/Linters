@@ -17,21 +17,6 @@ Once Sublime Text editor is installed, we will have to install the sublime edito
   1. __Node.js (>=4.x)__
   2. __npm version 2+__
 
-•	Go the link - https://github.com/sindresorhus/editorconfig-sublime.
-
-•	Click on “Clone or download” button.
-
-•	Once the file is downloaded, unzip the file and create a folder with JS file in the same folder.
-
-{{%
-  video class="align-video" mp4="/media/sublime_createJSfile.mp4"
-%}}
-
-•	In this JS file, write some code using the sublime editor and save it.
-
-{{%
-  video class="align-video" mp4="/media/sublime_writeJSfile.mp4"
-%}}
 
 •	Open the command prompt from the main folder. If your project doesnt have package.json, you can create one by running the command - __npm init__.
 
