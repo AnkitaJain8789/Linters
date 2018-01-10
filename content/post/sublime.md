@@ -17,21 +17,6 @@ Once Sublime Text editor is installed, we will have to install the sublime edito
   1. __Node.js (>=4.x)__
   2. __npm version 2+__
 
-•	Go the link - https://github.com/sindresorhus/editorconfig-sublime.
-
-•	Click on “Clone or download” button.
-
-•	Once the file is downloaded, unzip the file and create a folder with JS file in the same folder.
-
-{{%
-  video class="align-video" mp4="/media/sublime_createJSfile.mp4"
-%}}
-
-•	In this JS file, write some code using the sublime editor and save it.
-
-{{%
-  video class="align-video" mp4="/media/sublime_writeJSfile.mp4"
-%}}
 
 •	Open the command prompt from the main folder. If your project doesnt have package.json, you can create one by running the command - __npm init__.
 
@@ -47,14 +32,12 @@ Once Sublime Text editor is installed, we will have to install the sublime edito
 
 •	Detailed description can be found in https://www.npmjs.com/package/eslint and https://eslint.org/docs/user-guide/configuring
 
-•	Do linting by running the command __eslint file_name.js__.
-
-•	All the errors in your JS file will be shown here, based on the preferences(answers) selected while creating eslintrc.js file
+•	Once installation and configuration are done, open Sublime Text. Install Package Control and required packages i.e., __sublimelinter__ and __sublimelinter-eslint__.
 
 {{%
-  video class="align-video" mp4="/media/sublime_finderror.mp4"
-%}} 
+  video class="align-video" mp4="/media/sublime_installpackages.mp4"
+%}}
 
-•	Potentially fixable errors can be fixed by running the command __eslint file_name.js --fix__
-
-{{% figure class="align-left" src="/images/sublime_codefix.png" width="60%" alt="potential code fix" %}}
+{{%
+  video class="align-video" mp4="/media/sublime_debug.mp4"
+%}}
