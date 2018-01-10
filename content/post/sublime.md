@@ -32,14 +32,12 @@ Once Sublime Text editor is installed, we will have to install the sublime edito
 
 •	Detailed description can be found in https://www.npmjs.com/package/eslint and https://eslint.org/docs/user-guide/configuring
 
-•	Do linting by running the command __eslint file_name.js__.
-
-•	All the errors in your JS file will be shown here, based on the preferences(answers) selected while creating eslintrc.js file
+•	Once installation and configuration are done, open Sublime Text. Install Package Control and required packages i.e., __sublimelinter__ and __sublimelinter-eslint__.
 
 {{%
-  video class="align-video" mp4="/media/sublime_finderror.mp4"
-%}} 
+  video class="align-video" mp4="/media/sublime_installpackages.mp4"
+%}}
 
-•	Potentially fixable errors can be fixed by running the command __eslint file_name.js --fix__
-
-{{% figure class="align-left" src="/images/sublime_codefix.png" width="60%" alt="potential code fix" %}}
+{{%
+  video class="align-video" mp4="/media/sublime_debug.mp4"
+%}}
