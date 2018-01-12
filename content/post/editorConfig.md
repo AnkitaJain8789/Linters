@@ -73,6 +73,19 @@ trim_trailing_whitespace = false
 •	Restart the application(Sublime Text). To confirm that EditorConfig is installed correctly on your Sublime Text instance, click on _Preferences_ → _Package Settings_, now you should be able to see _EditorConfig_.
 
 #### Supported Properties:
+
+#### __Editor Config for VS Code__ -
+
+1. Search and install <em>EditorConfig for VS Code</em> from the extensions.
+
+2. Reload the editor
+
+3. Add an .editorconfig file at the root of your project, its settings apply to all applicable files at that level and below. To override EditorConfig settings for a particular folder in the project such that it uses different conventions than the top-level EditorConfig file, just add an .editorconfig file to the folder. 
+
+If root=true property is set, then VSCode doesn't look any further up the directory structure to search for any property if not found in .editorconfig file.
+
+{{% figure src="/images/EditorConfig_Setup.gif" width="60%" alt="EditorConfig Setup in VSCode" %}}
+
 <ul>
 	<li>indent_style</li>
 	<li>indent_size</li>
@@ -88,3 +101,9 @@ trim_trailing_whitespace = false
 {{%
   video class="align-video" mp4="/media/sublime_editorConfigWrite.mp4"
 %}}
+##### Creating EditorConfig file:
+{{% figure src="/images/EditorConfig_File.gif" width="60%" alt="Creating .editorconfig file" %}}
+
+##### References:
+
+http://editorconfig.org/
