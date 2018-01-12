@@ -59,3 +59,32 @@ trim_trailing_whitespace = false
 3. Whenever you open a file in the project (or change any .editorconfig file from within Atom), EditorConfig evaluates the EditorConfig settings for the current file.
 4. EditorConfig then applies these settings to your current editor pane. Any change you make from now on will follow the EditorConfig settings. __EditorConfig won't automatically fix older files that it considers to be malformed.__
 5. You can always check your EditorConfig settings against the current file using the __EditorConfig: Show State command__. You can try to fix malformed files using the command __EditorConfig: Fix File__
+
+#### __Editor Config for Sublime Text__ -
+
+•	Open Sublime Text.
+
+•	Install __editorConfig__ with __Package Control__ and restart Sublime Text.
+
+{{%
+  video class="align-video" mp4="/media/sublime_editorConfig.mp4"
+%}}
+
+•	Restart the application(Sublime Text). To confirm that EditorConfig is installed correctly on your Sublime Text instance, click on _Preferences_ → _Package Settings_, now you should be able to see _EditorConfig_.
+
+#### Supported Properties:
+<ul>
+	<li>indent_style</li>
+	<li>indent_size</li>
+	<li>tab_width</li>
+	<li>end_of_line</li>
+	<li>insert_final_newline</li>
+	<li>trim_trailing_whitespace</li>
+	<li>charset</li>
+</ul>
+
+#### Editing __editorConfig__ file:
+
+{{%
+  video class="align-video" mp4="/media/sublime_editorConfigWrite.mp4"
+%}}

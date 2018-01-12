@@ -32,12 +32,22 @@ Once Sublime Text editor is installed, we will have to install the sublime edito
 
 •	Detailed description can be found in https://www.npmjs.com/package/eslint and https://eslint.org/docs/user-guide/configuring
 
-•	Once installation and configuration are done, open Sublime Text. Install Package Control and required packages i.e., __sublimelinter__ and __sublimelinter-eslint__.
+#### __Procedure to do linting in Sublime Text:__
+
+•	Open Sublime Text.
+
+•	To install any package in Sublime Text, first we need to install __Package Control__. (Click on _Tools_ tab and select _install Package Control..._)
+
+•	Open command palette, by pressing ctrl+shift+p. Once commmand palette is opened, start typing __install package__. Select __Package Control: Install Package__ from the matching commands.
+ 
+•	An another (similar)command palette will be popped up, start searching for __sublimelinter__ and __sublimelinter-eslint__ packages, click once they are found(installation will be done). Restart Sublime Text to start linting the JavaScript(otherwise linting doesn't happen).
 
 {{%
   video class="align-video" mp4="/media/sublime_installpackages.mp4"
 %}}
 
-{{%
-  video class="align-video" mp4="/media/sublime_debug.mp4"
-%}}
+•	Once the application is restarted, the errors will be indicated in red outline and all the lines which have error are indicated with red dots in the respective javascript file.
+
+•	To view the error description press __ctrl+k,a__ or __ctrl+`__(opens command prompt and this show all the error descriptions).
+
+{{% figure class="align-left" src="/images/sublime_errors.png" width="60%" alt="shows errors after linting" %}}
