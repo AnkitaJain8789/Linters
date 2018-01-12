@@ -60,6 +60,19 @@ trim_trailing_whitespace = false
 4. EditorConfig then applies these settings to your current editor pane. Any change you make from now on will follow the EditorConfig settings. __EditorConfig won't automatically fix older files that it considers to be malformed.__
 5. You can always check your EditorConfig settings against the current file using the __EditorConfig: Show State command__. You can try to fix malformed files using the command __EditorConfig: Fix File__
 
+#### __Editor Config for Sublime Text__ -
+
+•	Open Sublime Text.
+
+•	Install __editorConfig__ with __Package Control__ and restart Sublime Text.
+
+{{%
+  video class="align-video" mp4="/media/sublime_editorConfig.mp4"
+%}}
+
+•	Restart the application(Sublime Text). To confirm that EditorConfig is installed correctly on your Sublime Text instance, click on _Preferences_ → _Package Settings_, now you should be able to see _EditorConfig_.
+
+#### Supported Properties:
 
 #### __Editor Config for VS Code__ -
 
@@ -73,7 +86,6 @@ If root=true property is set, then VSCode doesn't look any further up the direct
 
 {{% figure src="/images/EditorConfig_Setup.gif" width="60%" alt="EditorConfig Setup in VSCode" %}}
 
-##### Supported Properties:
 <ul>
 	<li>indent_style</li>
 	<li>indent_size</li>
@@ -84,6 +96,11 @@ If root=true property is set, then VSCode doesn't look any further up the direct
 	<li>charset</li>
 </ul>
 
+#### Editing __editorConfig__ file:
+
+{{%
+  video class="align-video" mp4="/media/sublime_editorConfigWrite.mp4"
+%}}
 ##### Creating EditorConfig file:
 {{% figure src="/images/EditorConfig_File.gif" width="60%" alt="Creating .editorconfig file" %}}
 
