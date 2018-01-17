@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/post/atom/</loc>
+    <lastmod>2017-12-06T17:16:35+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/eslint/</loc>
+    <lastmod>2017-12-06T17:16:35+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/editorconfig/</loc>
+    <lastmod>2017-12-06T17:16:35+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/vscode/</loc>
+    <lastmod>2017-12-06T17:09:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/sublime/</loc>
+    <lastmod>2017-12-06T17:09:17+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2017-12-06T17:16:35+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2017-12-06T17:16:35+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

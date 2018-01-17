@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Atom Configuration</title>
+
+  
+  
+
+
+
+
+
+  
+  <meta name="author" content="" />
+  <meta name="description" content="Atom is a text editor that&amp;rsquo;s modern, approachable, yet hackable to the core — a tool you can customize to do anything but also use productively without ever touching a config file.
+Steps to set-up a complete LINTING configuration in ATOM: • The prerequisite to any linting setup is to ensure that we have an ESLint installed.
+1. Node.js (&amp;gt;=4.x) 2. npm version 2&#43; • Go to command Prompt and run the command:" />
+
+  
+  
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Atom Configuration" />
+    <meta name="twitter:description" content="Atom is a text editor that&amp;rsquo;s modern, approachable, yet hackable to the core — a tool you can customize to do anything but also use productively without ever touching a config file.
+Steps to set-up a complete LINTING configuration in ATOM: • The prerequisite to any linting setup is to ensure that we have an ESLint installed.
+1. Node.js (&amp;gt;=4.x) 2. npm version 2&#43; • Go to command Prompt and run the command:" />
+    <meta name="twitter:image" content="http://localhost:1313/img/avatar.jpg" />
+  
+
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Atom Configuration" />
+  <meta property="og:description" content="Atom is a text editor that&amp;rsquo;s modern, approachable, yet hackable to the core — a tool you can customize to do anything but also use productively without ever touching a config file.
+Steps to set-up a complete LINTING configuration in ATOM: • The prerequisite to any linting setup is to ensure that we have an ESLint installed.
+1. Node.js (&amp;gt;=4.x) 2. npm version 2&#43; • Go to command Prompt and run the command:" />
+  <meta property="og:url" content="http://localhost:1313/post/atom/" />
+  <meta property="og:image" content="http://localhost:1313/img/avatar.jpg" />
+
+
+
+
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/atom/" />
+<link rel="alternative" href="http://localhost:1313/index.xml" title="Linting" type="application/atom+xml" />
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+
+
+
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Linting" />
+<meta name="msapplication-tooltip" content="Linting" />
+<meta name='msapplication-navbutton-color' content="#5fbf5e" />
+<meta name="msapplication-TileColor" content="#5fbf5e" />
+<meta name="msapplication-TileImage" content="/img/tile-image-windows.png" />
+<link rel="icon" href="http://localhost:1313/img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/img/favicon-32x32.png" />
+<link rel="icon" sizes="192x192" href="http://localhost:1313/img/touch-icon-android.png" />
+<link rel="apple-touch-icon" href="http://localhost:1313/img/touch-icon-apple.png" />
+<link rel="mask-icon" href="http://localhost:1313/img/safari-pinned-tab.svg" color="#5fbf5e" />
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.2.8/alt/video-js-cdn.min.css" />
+
+<link rel="stylesheet" href="http://localhost:1313/css/bundle.css" />
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/video.js/6.2.8/ie8/videojs-ie8.min.js"></script>
+  <![endif]-->
+
+<!--[if lte IE 11]>
+    <script src="//cdn.bootcss.com/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+
+<script src="//cdn.bootcss.com/object-fit-images/3.2.3/ofi.min.js"></script>
+
+
+<script src="//cdn.bootcss.com/smooth-scroll/12.1.4/js/smooth-scroll.polyfills.min.js"></script>
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a title="Go to top" class="to-top is-hide"><span class="icon icon-up"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="http://localhost:1313/images/eslint.svg" alt="Avatar">
+  
+  <h2 class="title">Linting</h2>
+  
+  <p class="subtitle">Improves your code quality</p>
+  <button class="menu-toggle" type="button">
+    <span class="icon icon-menu"></span>
+  </button>
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+            
+            
+            
+              is-active
+            ">
+            <a href="http://localhost:1313/">Home</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="http://localhost:1313/post/atom">Atom</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="http://localhost:1313/post/sublime">Sublime Text</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="http://localhost:1313/post/vscode">Visual Studio Code</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="http://localhost:1313/post/eslint">ESLint Configuration</a>
+          </li>
+      
+        <li class="menu-item
+            
+            
+            ">
+            <a href="http://localhost:1313/post/editorconfig">Editor Config</a>
+          </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list">
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li class="social-item">
+        <a href="http://localhost:1313/index.xml"><span class="icon icon-rss" title="RSS"></span></a>
+      </li>
+
+    </ul>
+  </nav>
+  <link rel="stylesheet" href="http://localhost:1313/css/style.css">
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Atom Configuration</h1>
+      <p class="post-meta">@ · Dec 6, 2017 · 2 min read</p>
+    </header>
+    <article class="post-content">
+
+<p><strong>Atom</strong> is a text editor that&rsquo;s modern, approachable, yet hackable to the core — a tool you can customize to do anything but also use productively without ever touching a config file.</p>
+
+<h4 id="steps-to-set-up-a-complete-linting-configuration-in-atom">Steps to set-up a complete <strong>LINTING</strong> configuration in <strong>ATOM</strong>:</h4>
+
+<p>•   The prerequisite to any linting setup is to ensure that we have an <em>ESLint installed</em>.<br/></p>
+
+<h5 id="1-node-js-4-x">1. <strong>Node.js (&gt;=4.x)</strong></h5>
+
+<h5 id="2-npm-version-2">2. <strong>npm version 2+</strong></h5>
+
+<p>•   Go to command Prompt and run the command:<br/></p>
+
+<h5 id="npm-install-eslint-save-dev-locally"><strong>npm install eslint &ndash;save-dev (LOCALLY)</strong></h5>
+
+<h5 id="npm-i-g-eslint-globally"><strong>npm i -g eslint (GLOBALLY)</strong></h5>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="https://asciinema.org/a/153243.js" id="asciicast-153243"  data-speed="1" data-size="small" data-theme="monokai" data-cols="80" data-rows="20"  data-loop="1"  data-preload=1 async></script>
+  
+
+
+
+
+
+
+
+<p>•   If this local installation of ESLint is <strong>NOT</strong> found, Atom will use the built-in ESLint in the linter-eslint package itself.</p>
+
+<p>•   The recent versions of ESLint do not use any rules by-default. This means we have to specify a configuration file for our project.</p>
+
+<p>•   To specify the linting rules an eslintrc.* file should be created. This can be done in two ways:</p>
+
+<h5 id="1-manually">1. Manually:</h5>
+
+<p>A simple JavaScript/JSON file can be created to specify configuration information for an entire directory. This can be in the form of .eslintrc file or an eslintConfig field in package.json file. A detailed document to create .eslintrc file can be found here:</p>
+
+<h5 id="https-eslint-org-docs-user-guide-configuring"><a href="https://eslint.org/docs/user-guide/configuring">https://eslint.org/docs/user-guide/configuring</a></h5>
+
+
+
+
+
+
+
+
+  <video id="my-player" class="video-js vjs-big-play-centered" controls preload="auto" poster="/img/poster.jpg" data-setup="{}">
+    <source src="http://localhost:1313/media/atom_local_eslintrc.mp4" type="video/mp4"></source>
+    <source src="" type="video/webm"></source>
+    <source src="" type=video/ogg></source>
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+
+
+
+
+<h5 id="2-using-command-prompt">2. Using command Prompt:</h5>
+
+<p>This will use initializer from eslint. We have to give the following command:<br/></p>
+
+<h5 id="eslint-init"><strong>eslint &ndash;init</strong></h5>
+
+<p>This will prompt us to answer certain questions about the how we want to configure eslint and gives us option to set it up according to a popular style guide or by inspecting our JS.</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="https://asciinema.org/a/153254.js" id="asciicast-153254"  data-speed="1" data-size="small" data-theme="monokai" data-cols="80" data-rows="20"  data-loop="1"  data-preload=1 async></script>
+  
+
+
+
+
+
+
+
+<p>•   Once our eslintrc.* file is ready, we need a plugin to apply this smoothly in our code-base.</p>
+
+<p>•   To download the plugin in ATOM we need to open settings view and Click on ‘Install’.</p>
+
+<p>•   Search for packages - <strong>&ldquo;linter-eslint&rdquo;</strong> and <strong>&ldquo;linter&rdquo;</strong> and install the packages.</p>
+
+<p>•   A detailed document of this plugin can be found on :</p>
+
+<h5 id="https-atom-io-packages-linter-eslint"><a href="https://atom.io/packages/linter-eslint">https://atom.io/packages/linter-eslint</a></h5>
+
+<h5 id="https-atom-io-packages-linter"><a href="https://atom.io/packages/linter">https://atom.io/packages/linter</a></h5>
+
+
+
+
+
+
+
+
+  <video id="my-player" class="video-js vjs-big-play-centered" controls preload="auto" poster="/img/poster.jpg" data-setup="{}">
+    <source src="http://localhost:1313/media/atom_package_installation.mp4" type="video/mp4"></source>
+    <source src="" type="video/webm"></source>
+    <source src="" type=video/ogg></source>
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+
+
+
+
+<h4 id="sample-example">Sample Example:</h4>
+
+
+<figure class="align-left">
+    
+        <img src="http://localhost:1313/images/atom_input.png" alt="JavaScript Code and associated .eslintrc.js file" width="60%" />
+    
+    
+</figure>
+
+
+<h4 id="how-to-execute">How to execute ?</h4>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="https://asciinema.org/a/153259.js" id="asciicast-153259"  data-speed="1" data-size="small" data-theme="monokai" data-cols="80" data-rows="20"  data-loop="1"  data-preload=1 async></script>
+  
+
+
+
+
+
+
+
+<h4 id="output">Output:</h4>
+
+
+<figure class="align-left">
+    
+        <img src="http://localhost:1313/images/atom_output.png" alt="JavaScript Code and associated .eslintrc.js file" width="60%" />
+    
+    
+</figure>
+
+</article>
+    <footer class="post-footer">
+      
+      <p class="post-copyright">
+        
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  <footer class="site-footer">
+  <p>© 2017-2018 Linting</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank">Nuo</a>.</p>
+  
+</footer>
+
+
+
+<script async src="//cdn.bootcss.com/video.js/6.2.8/alt/video.novtt.min.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+<script src="http://localhost:1313/js/bundle.js"></script>
+
+
+
+
+  </body>
+</html>

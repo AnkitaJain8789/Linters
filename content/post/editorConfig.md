@@ -49,11 +49,29 @@ indent_size = 2
 [*.{diff,md}]
 trim_trailing_whitespace = false
 ```
+
+#### Supported Properties:
+
+<ul>
+	<li>indent_style</li>
+	<li>indent_size</li>
+	<li>tab_width</li>
+	<li>end_of_line</li>
+	<li>insert_final_newline</li>
+	<li>trim_trailing_whitespace</li>
+	<li>charset</li>
+</ul>
+
+
 #### __Editor Config for Atom__ -
 
 1. Install required Editor Config package
 #####    __i. apm install editorconfig via command prompt__
 #####    __ii. Preferences → Settings → Install → Search for editorconfig → install__
+
+{{%
+  video class="align-video" mp4="/media/atom_editorconfig.mp4"
+%}}
 
 2. Open a project containing an .editorconfig file.
 3. Whenever you open a file in the project (or change any .editorconfig file from within Atom), EditorConfig evaluates the EditorConfig settings for the current file.
@@ -72,18 +90,6 @@ trim_trailing_whitespace = false
 
 •	Restart the application(Sublime Text). To confirm that EditorConfig is installed correctly on your Sublime Text instance, click on _Preferences_ → _Package Settings_, now you should be able to see _EditorConfig_.
 
-#### Supported Properties:
-
-<ul>
-	<li>indent_style</li>
-	<li>indent_size</li>
-	<li>tab_width</li>
-	<li>end_of_line</li>
-	<li>insert_final_newline</li>
-	<li>trim_trailing_whitespace</li>
-	<li>charset</li>
-</ul>
-
 #### Editing __editorConfig__ file:
 
 {{%
@@ -97,14 +103,14 @@ trim_trailing_whitespace = false
 
 2. Reload the editor
 
-3. Add an .editorconfig file at the root of your project, its settings apply to all applicable files at that level and below. To override EditorConfig settings for a particular folder in the project such that it uses different conventions than the top-level EditorConfig file, just add an .editorconfig file to the folder. 
+3. Add an .editorconfig file at the root of your project, its settings apply to all applicable files at that level and below. To override EditorConfig settings for a particular folder in the project such that it uses different conventions than the top-level EditorConfig file, just add an .editorconfig file to the folder.
 
 If root=true property is set, then VSCode doesn't look any further up the directory structure to search for any property if not found in .editorconfig file.
 
-{{% figure src="/images/EditorConfig_Setup.gif" width="60%" alt="EditorConfig Setup in VSCode" %}}
+{{% figure class="align-left" src="/images/EditorConfig_Setup.gif" width="60%" alt="EditorConfig Setup in VSCode" %}}
 
 ##### Creating EditorConfig file:
-{{% figure src="/images/EditorConfig_File.gif" width="60%" alt="Creating .editorconfig file" %}}
+{{% figure class="align-left" src="/images/EditorConfig_File.gif" width="60%" alt="Creating .editorconfig file" %}}
 
 ##### References:
 
