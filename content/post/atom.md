@@ -16,7 +16,8 @@ __Atom__ is a text editor that's modern, approachable, yet hackable to the core 
 ##### __npm install eslint --save-dev (LOCALLY)__
 ##### __npm i -g eslint (GLOBALLY)__
 
-{{% asciinema id="153243" speed="1" size="small" theme="monokai" cols="80" rows="20" loop="1" %}}
+<!-- {{% asciinema id="153243" speed="1" size="small" theme="monokai" cols="80" rows="20" loop="1" %}} -->
+<script src="https://asciinema.org/a/153243.js" id="asciicast-153243" async></script>
 
 •	If this local installation of ESLint is __NOT__ found, Atom will use the built-in ESLint in the linter-eslint package itself.
 
@@ -40,7 +41,9 @@ This will use initializer from eslint. We have to give the following command:<br
 
 This will prompt us to answer certain questions about the how we want to configure eslint and gives us option to set it up according to a popular style guide or by inspecting our JS.
 
-{{% asciinema id="153254" speed="1" size="small" theme="monokai" cols="80" rows="20" loop="1" %}}
+<!-- {{% asciinema id="153254" speed="1" size="small" theme="monokai" cols="80" rows="20" loop="1" %}} -->
+<script src="https://asciinema.org/a/153254.js" id="asciicast-153254" async></script>
+
 
 •	Once our eslintrc.* file is ready, we need a plugin to apply this smoothly in our code-base.
 
@@ -62,7 +65,8 @@ This will prompt us to answer certain questions about the how we want to configu
 
 #### How to execute ?
 
-{{% asciinema id="153259" speed="1" size="small" theme="monokai" cols="80" rows="20" loop="1" %}}
+<!-- {{% asciinema id="153259" speed="1" size="small" theme="monokai" cols="80" rows="20" loop="1" %}} -->
+<script src="https://asciinema.org/a/153259.js" id="asciicast-153259" async></script>
 
 #### Output:
 
