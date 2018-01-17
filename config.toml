@@ -42,7 +42,7 @@ canonifyurls = true
 [params]
   author = ""
   avatar = "/images/eslint.svg"
-  seotitle = "Hugo Blog (SEO Version)"
+  seotitle = "Swachh JS Abhiyaan"
   subtitle = "Improves your code quality"
   description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
   paginate = 10
